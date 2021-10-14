@@ -312,6 +312,14 @@ static void createKeyTables(void)
     _glfw.win32.keycodes[0x059] = GLFW_KEY_KP_EQUAL;
     _glfw.win32.keycodes[0x037] = GLFW_KEY_KP_MULTIPLY;
     _glfw.win32.keycodes[0x04A] = GLFW_KEY_KP_SUBTRACT;
+    
+    _glfw.win32.keycodes[0x120] = GLFW_KEY_VOLUME_MUTE;
+    _glfw.win32.keycodes[0x12E] = GLFW_KEY_VOLUME_DOWN;
+    _glfw.win32.keycodes[0x130] = GLFW_KEY_VOLUME_UP;
+    _glfw.win32.keycodes[0x119] = GLFW_KEY_MEDIA_NEXT;
+    _glfw.win32.keycodes[0x110] = GLFW_KEY_MEDIA_PREV;
+    _glfw.win32.keycodes[0x124] = GLFW_KEY_MEDIA_STOP;
+    _glfw.win32.keycodes[0x122] = GLFW_KEY_MEDIA_PLAY_PAUSE;
 
     for (scancode = 0;  scancode < 512;  scancode++)
     {
