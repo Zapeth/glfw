@@ -703,6 +703,11 @@ static LRESULT CALLBACK windowProc(HWND hWnd, UINT uMsg,
                 // HACK: Map the virtual key back to a usable scancode
                 scancode = MapVirtualKeyW((UINT) wParam, MAPVK_VK_TO_VSC);
             }
+            else if (scancode == KF_EXTENDED)
+            {
+                // HACK: same as above, but with extended key flag (tested with media keys, but might conflict with other defined keys)
+                scancode = MapVirtualKeyW((UINT) wParam, MAPVK_VK_TO_VSC) | KF_EXTENDED;
+            }
 
             key = _glfw.win32.keycodes[scancode];
 
