@@ -512,6 +512,25 @@ extern "C" {
 #define GLFW_KEY_RIGHT_SUPER        347
 #define GLFW_KEY_MENU               348
 
+/* Special keys (names derived from win32 vk codes) */
+#define GLFW_KEY_BROWSER_BACK       384
+#define GLFW_KEY_BROWSER_FORWARD    385
+#define GLFW_KEY_BROWSER_REFRESH    386
+#define GLFW_KEY_BROWSER_STOP       387
+#define GLFW_KEY_BROWSER_SEARCH     388
+#define GLFW_KEY_BROWSER_FAVORITES  389
+#define GLFW_KEY_BROWSER_HOME       390
+#define GLFW_KEY_VOLUME_MUTE        391
+#define GLFW_KEY_VOLUME_DOWN        392
+#define GLFW_KEY_VOLUME_UP          393
+#define GLFW_KEY_MEDIA_NEXT         394
+#define GLFW_KEY_MEDIA_PREV         395
+#define GLFW_KEY_MEDIA_STOP         396
+#define GLFW_KEY_MEDIA_PLAY_PAUSE   397
+#define GLFW_KEY_LAUNCH_MAIL        398
+#define GLFW_KEY_LAUNCH_MEDIA_SELECT 399
+#define GLFW_KEY_LAUNCH_APP         400
+       
 #define GLFW_KEY_LAST               GLFW_KEY_MENU
 
 /*! @} */
